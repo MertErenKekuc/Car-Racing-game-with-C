@@ -1,0 +1,33 @@
+					Mert Eren Keküç
+					   2102229005
+
+
+	Oyunun oynanışı oyun içinde anlatılmıştır. Daha çok eğlenmek için arkadaşlarınızla sırayla oynayıp uygulamayı kapatmadan devam ederseniz skor yarışı yapabilirsiniz. Ayrıca zorluk seçeneklerini denemeyi de unutmayın.
+BOL EĞLENCELER...
+
+Aşağıda da oyunun kodlarından bahsettim.
+
+	Oyun konsol tabanlı çalışıyor ve C programlama diliyle yazılmıştır. Kod, kullanıcıya farklı zorluk seviyelerinde oyun oynama seçeneği sunar. İşlevleri ve ana adımları aşağıda açıkladım:
+
+	gotoxy(int x, int y) fonksiyonu, konsol ekranındaki imleci belirtilen konumuna taşır. Bunu yapmak için windows.h kütüphanesinin SetConsoleCursorPosition fonksiyonunu kullanır.
+
+	setcursor(int visible) fonksiyonu, konsol ekranındaki imlecin görünürlüğünü ayarlar. Bu da windows.h kütüphanesinin CONSOLE_CURSOR_INFO ve SetConsoleCursorInfo fonksiyonunu kullanarak gerçekleştirilir.
+
+	drawBorder() fonksiyonu, oyun alanının etrafında çerçeve oluşturur. Bu, iki for döngüsü kullanarak ± karakterini kullanarak çizilir.
+
+	genEnemy(int ind) fonksiyonu, belirli bir düşmanın konumunu rastgele oluşturur. Bu, rand() fonksiyonunu kullanarak belirli bir aralıkta rastgele bir değer atar.
+
+	drawEnemy(int ind) fonksiyonu, belirli bir düşmanı ekrana çizer. Bu, printf() fonksiyonunu kullanarak **** ve ** karakterlerini kullanarak düşmanı temsil eden bir deseni çizer.
+
+	eraseEnemy(int ind) fonksiyonu, belirli bir düşmanı ekrandan siler. Bu, printf() fonksiyonunu kullanarak düşmanın olduğu konumda boşluk karakterlerini kullanır.
+
+	resetEnemy(int ind) fonksiyonu, belirli bir düşmanın konumunu sıfırlar. Bu, eraseEnemy() ve genEnemy() fonksiyonlarını kullanarak gerçekleştirilir.
+
+	drawCar() fonksiyonu, kullanıcının arabasını ekrana çizer. Bu, printf() fonksiyonunu kullanarak car dizisini kullanır.
+
+	eraseCar() fonksiyonu, kullanıcının arabasını ekrandan siler. Bu, printf() fonksiyonunu kullanarak arabayı temsil eden konumda boşluk karakterlerini kullanır.
+
+	collision(int ind) fonksiyonu, arabayla düşman arasında bir çarpışma olup olmadığını kontrol eder. Bu, arabayla düşman arasındaki mesafeyi ve konumlarını kontrol ederek gerçekleştirilir.
+
+gameover() fonksiyonu, oyunun sona erdiği durumu kullanıcıya bildirir. Bu, ekranda bir mesaj gösterir ve kullanıcının bir tuşa basmasını bekler.
+
