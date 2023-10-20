@@ -1,7 +1,7 @@
 # Car-Racing-game-with-C
 Car racing game that I prepared using C programming language and gotoxy
   The gameplay of the game is explained within the game. To have more fun, you can take turns playing with your friends and race against the score if you continue without closing the application. Also, don't forget to try the difficulty options.
-HAVE LOTS OF FUN...
+### HAVE LOTS OF FUN...
 
 I have mentioned the codes of the game below.
 
